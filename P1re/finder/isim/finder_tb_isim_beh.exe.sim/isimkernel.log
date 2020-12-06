@@ -1,0 +1,29 @@
+Command line:
+   finder_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61047
+
+Fri Nov 06 21:55:16 2020
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 834.728 Meg
+
+ Total Signals          : 16
+ Total Nets             : 24
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 176
+Total Line Count : 21
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 835.777 Meg
+
+Fri Nov 06 21:55:22 2020
+
