@@ -1,0 +1,63 @@
+Running: D:\school\ISE\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/86181/Desktop/P5/mipsRe/mips_tb_isim_beh.exe -prj C:/Users/86181/Desktop/P5/mipsRe/mips_tb_beh.prj work.mips_tb work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/PC.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/NPC.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/IM.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/GRF.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/EXT.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/DM.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/CMP.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/ALU.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/stageW.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/stageM.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/stageF.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/stageE.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/stageD.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/regW.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/regM.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/regE.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/regD.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/controller.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/ATcontroller.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/mips.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P5/mipsRe/mips_tb.v" into library work
+Analyzing Verilog file "D:/school/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/86181/Desktop/P5/mipsRe/mips.v" Line 88: Port RFWr is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/86181/Desktop/P5/mipsRe/mips.v" Line 151: Port NPCOp is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/86181/Desktop/P5/mipsRe/mips.v" Line 196: Port NPCOp is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/86181/Desktop/P5/mipsRe/mips.v" Line 241: Port NPCOp is not connected to this instance
+Completed static elaboration
+Fuse Memory Usage: 160836 KB
+Fuse CPU Usage: 280 ms
+Compiling module ATcontroller
+Compiling module PC
+Compiling module IM
+Compiling module stageF
+Compiling module regD
+Compiling module controller
+Compiling module GRF
+Compiling module EXT
+Compiling module CMP
+Compiling module NPC
+Compiling module stageD
+Compiling module regE
+Compiling module ALU
+Compiling module stageE
+Compiling module regM
+Compiling module DM
+Compiling module stageM
+Compiling module regW
+Compiling module stageW
+Compiling module mips
+Compiling module mips_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 22 Verilog Units
+Built simulation executable C:/Users/86181/Desktop/P5/mipsRe/mips_tb_isim_beh.exe
+Fuse Memory Usage: 170620 KB
+Fuse CPU Usage: 484 ms
