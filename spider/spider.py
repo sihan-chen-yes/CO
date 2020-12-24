@@ -6,6 +6,15 @@ from bs4 import BeautifulSoup
 from urllib import request
 from fake_useragent import UserAgent
 import time
+import random
+from urllib.request import ProxyHandler
+from urllib.request import build_opener
+#IP来源于网络
+proxies_list = [
+    'https://144.255.49.40:9999',
+    'https://60.13.42.15:9999',
+    'https://163.204.246.105:9999'
+]
 
 def generate():
     baseUrl = 'https://movie.douban.com/top250?start='
@@ -89,14 +98,18 @@ def getData(baseUrl):
 
 # 获取网页链接
 def askURL(url):
-    ua = UserAgent()
+    '''ua = UserAgent()
     head = {
         "User-Agent":ua.random
     }
-    req = urllib.request.Request(url, headers=head)
+    req = urllib.request.Request(url, headers=head)'''
+    #更换IP
+    use_ip = random.choice(proxies_list)
+    proxy = {'http':use_ip}
+    opener = build_opener(proxy)
     html = ""
     try:
-        response = urllib.request.urlopen(req)
+        response = opener.open(url)
         html = response.read().decode('utf-8')  # read()获取响应体的内容，内容是bytes字节流，需要转换成字符串
 
     except urllib.error.URLError as e:
@@ -134,8 +147,10 @@ def saveData(datalist):
             #保存图片
             if(k == 1):
                 ua = UserAgent()
+                #对付图片防盗链
                 head = {
-                    "User-Agent": ua.random
+                    "User-Agent": ua.random,
+                    'Referer':'https://movie.douban.com/top250'
                 }
                 req = urllib.request.Request(data[1], headers=head)
                 picture = request.urlopen(req).read()
@@ -152,8 +167,4 @@ def saveData(datalist):
         print("第%d条saved" % (i + 1))
     print("generate finished")
     return dict
-
-
-if __name__ == '__main__':
-    dict = generate()
 

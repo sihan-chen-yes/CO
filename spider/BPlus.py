@@ -172,17 +172,3 @@ class Bptree:
         except:
             return None
 
-
-if __name__ == '__main__':
-    testlist = []
-    for i in range(0, 250):
-        key = i
-        value = i
-        testlist.append(KeyValue(key, value))
-    mybptree = Bptree(20,15)
-    for kv in testlist:
-        mybptree.insert(kv)
-    mybptree.show()
-    print('\nkey of this b+tree is \n')
-    print(set([kv.key for kv in mybptree.traversal()]))
-    print(mybptree.search(5))
