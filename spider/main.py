@@ -28,7 +28,7 @@ for i in range(0, 250):
         key = i + 1
         value = ((table_path+str(key)+'.xls'),(picture_path+str(key)+'.jpg'))
         kv_list.append(KeyValue(key, value))
-content_bptree = Bptree(20, 15)
+content_bptree = Bptree(20, 20)
 for kv in kv_list:
     content_bptree.insert(kv)
 

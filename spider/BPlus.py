@@ -171,4 +171,10 @@ class Bptree:
                 return l.valuelist[i]
         except:
             return None
+if __name__ == '__main__':
+    bptree = Bptree(20,20)
+    for i in range(250):
+        kv = KeyValue(i,i)
+        bptree.insert(kv)
+    bptree.show()
 

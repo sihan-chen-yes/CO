@@ -6,6 +6,7 @@ from functools import partial
 from PyQt5 import QtCore, QtGui, QtWidgets
 import UIdesign
 import read
+import math
 col = ("电影详情链接", "图片链接", "影片中文名", "影片外国名", "影片评分", "影片评价人数", "影片概况", "影片内容")
 
 def get_key(dict, value):
@@ -86,7 +87,7 @@ def score_search(ui,bptree,dict):
         else:
             UIdesign.Ui_MainWindow.clear(ui)
             for j in range(len(list)):
-                num = j + 1
+                num = int(list[j])
                 xls_path = bptree.search(num).value[0]
                 info = read.readData(xls_path)
                 for i in range(len(info)):
@@ -115,7 +116,7 @@ def judge_person_search(ui, bptree, dict):
         else:
             UIdesign.Ui_MainWindow.clear(ui)
             for j in range(len(list)):
-                num = j + 1
+                num = int(list[j])
                 xls_path = bptree.search(num).value[0]
                 info = read.readData(xls_path)
                 for i in range(len(info)):
