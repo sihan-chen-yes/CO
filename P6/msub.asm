@@ -1,0 +1,12 @@
+ori $1,$1,5642
+ori $2,$2,-124
+mult $1,$2
+ori $5,$5,-5400
+ori $6,$6,2133
+div $6,$5
+mfhi $7
+mtlo $5
+mfhi $7
+msub $1,$2
+mfhi $3
+mflo $4
