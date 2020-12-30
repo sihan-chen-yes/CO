@@ -22,6 +22,7 @@ module regM(
     input clk,
     input reset,
 	 input IntReq,
+	 input eret,
     input [31:0] instr_E,
     input [31:0] PC_E,
     input [31:0] PC8_E,
@@ -40,7 +41,7 @@ module regM(
 	 output reg BD_M
     );
 	always@(posedge clk)begin
-		if(reset|IntReq)begin
+		if(reset|IntReq|eret)begin
 			C_M <= 32'h00000000;
 			RD2_M <= 32'h00000000;
 			instr_M <= 32'h00000000;

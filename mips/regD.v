@@ -23,20 +23,28 @@ module regD(
     input reset,
 	 input IntReq,
     input D_en,
-	 input eret_D,
+	 input eret,
     input [31:0] instr_F,
     input [31:0] PC_F,
     input [31:0] PC8_F,
 	 input [6:2] ExcCodeF,
 	 input BDSel,
+	 input eretpassed,
 	 output reg [6:2] ExcCodeD_raw,
     output reg [31:0] instr_D,
     output reg [31:0] PC_D,
     output reg [31:0] PC8_D,
 	 output reg BD_D
     );
+	 reg passed;
+	 always@(posedge clk)begin
+		if(eretpassed)
+			passed <= 1;
+		if(eret) 
+			passed <= 0;
+	 end
 	 always@(posedge clk) begin
-		if(reset|IntReq|eret_D)begin
+		if(reset|IntReq|eret|eretpassed)begin
 			instr_D <= 32'h00000000;
 			PC_D <= 32'h00000000;
 			PC8_D <= 32'h00000000;

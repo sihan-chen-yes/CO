@@ -84,7 +84,6 @@ module CP0(
 				exccode <= (ExInt)?5'b00000:
 										ExcCode;
 				bd <= BD;
-				IP <= HWInt;	
 			end
 			else if(We)begin
 				case(A)
@@ -99,6 +98,7 @@ module CP0(
 				endcase
 			end
 		end
+		IP <= HWInt;	
 	end
 	
 	assign Dout = 	(A == `SR)? {16'b0,IM,8'b0,EXL,IE}:

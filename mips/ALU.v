@@ -70,6 +70,6 @@ module ALU(
 											
 	
 											
-	assign Ov = ((tmp_add[32] != tmp_add[31])|(tmp_sub[32] != tmp_sub[31]))&(Care);
+	assign Ov = ((tmp_add[32] != tmp_add[31])||(tmp_sub[32] != tmp_sub[31]))&&(Care);
 	
 endmodule

@@ -26,7 +26,7 @@ module stageF(
     input [31:0] NPC,
 	 input [31:0] EPC,
     input PC_en,
-	 input eret_D,
+	 input eret,
 	 input IntReq,
     output [31:0] instr_F,
     output [31:0] PC_F,
@@ -41,11 +41,12 @@ module stageF(
 		.reset(reset),
 		.PC_en(PC_EN),
 		.NPC(nextPC),
-		.PC(PC_F)
+		.PC(PC_F),
+		.eret(eret)
 	 );
 	 assign PC_EN = (IntReq === 1) ? 1:PC_en;
 	 assign nextPC = (IntReq === 1)? `HandlerPC:
-						  (eret_D === 1) ?  EPC:
+						  (eret === 1) ?  EPC:
 										NPC;
 	 
 	 

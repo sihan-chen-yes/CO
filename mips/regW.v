@@ -22,6 +22,7 @@ module regW(
     input clk,
     input reset,
 	 input IntReq,
+	 input eret,
     input [31:0] instr_M,
     input [31:0] PC8_M,
     input [31:0] D_M,
@@ -36,7 +37,7 @@ module regW(
 	 output reg [4:0] A3_W
     );
 	always@(posedge clk)begin
-		if(reset|IntReq)begin
+		if(reset|IntReq|eret)begin
 			instr_W <= 32'h00000000;
 			PC8_W <= 32'h00000000;
 			D_W <= 32'h00000000;

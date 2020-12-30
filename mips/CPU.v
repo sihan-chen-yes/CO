@@ -61,7 +61,7 @@ module CPU(
 	 );
 
 	 //------------------stageF---------------
-	 wire IntReq,eret_D;
+	 wire IntReq,eret;
 	 wire [31:0] NPC,instr_F,PC_F,PC8_F,EPC;
 	 wire [6:2] ExcCodeF;
 	 stageF stageF(
@@ -74,19 +74,19 @@ module CPU(
 		.PC_F(PC_F),
 		.PC8_F(PC8_F),
 		.ExcCodeF(ExcCodeF),
-		.eret_D(eret_D),
+		.eret(eret),
 		.IntReq(IntReq)
 	 );
 	//------------------regD---------------
 	wire [31:0] instr_D,PC_D,PC8_D;
 	wire [6:2] ExcCodeD_raw;
 	wire BDSel;
-	wire BD_D;
+	wire BD_D,eretpassed;
 	regD regD(
 		.clk(clk),
 		.reset(reset),
 		.IntReq(IntReq),
-		.eret_D(eret_D),
+		.eret(eret),
 		.D_en(D_en),
 		.instr_F(instr_F),
 		.PC_F(PC_F),
@@ -97,7 +97,8 @@ module CPU(
 		.ExcCodeF(ExcCodeF),
 		.ExcCodeD_raw(ExcCodeD_raw),
 		.BDSel(BDSel),
-		.BD_D(BD_D)
+		.BD_D(BD_D),
+		.eretpassed(eretpassed)
 	);
 	
 	//------------------stageD---------------
@@ -127,7 +128,7 @@ module CPU(
 		.MD_instr(MD_instr),
 		.RI(RI),
 		.BDSel(BDSel),
-		.eret(eret_D)
+		.eretpassed(eretpassed)
 	);
 	
 	stageD stageD(
@@ -170,6 +171,7 @@ module CPU(
 		.reset(reset),
 		.IntReq(IntReq),
 		.RI(RI),
+		.eret(eret),
 		.E_clr(E_clr),
 		.A3_D(A3_D),
 		.instr_D(instr_D),
@@ -251,6 +253,7 @@ module CPU(
 		.reset(reset),
 		.IntReq(IntReq),
 		.instr_E(instr_E),
+		.eret(eret),
 		.A3_E(A3_E),
 		.PC_E(PC_E),
 		.PC8_E(PC8_E),
@@ -271,7 +274,7 @@ module CPU(
 	//------------------stageM---------------
 	wire [31:0] D_M;
 	wire [1:0] WDSel_M,DAOp;
-	wire SSel,We,eret_M;
+	wire SSel,We;
 	wire [4:0] rd_M;
 	wire [1:0] LoadType,StoreType;
 	controller controller_M(
@@ -286,7 +289,7 @@ module CPU(
 		.LoadType(LoadType),
 		.StoreType(StoreType),
 		.We(We),
-		.eret(eret_M)
+		.eret(eret)
 	);
 	assign PrWE = DMWr&(~IntReq);
 	wire [6:2] ExcCodeM;
@@ -315,7 +318,7 @@ module CPU(
 		.BD_E(BD_E),
 		.BD_D(BD_D),
 		.We(We),
-		.eret_M(eret_M),
+		.eret(eret),
 		.PrRD(PrRD),
 		.PrWD(PrWD),
 		.PrAddr(PrAddr),
@@ -335,6 +338,7 @@ module CPU(
 		.clk(clk),
 		.reset(reset),
 		.IntReq(IntReq),
+		.eret(eret),
 		.A3_M(A3_M),
 		.instr_M(instr_M),
 		.PC_M(PC_M),

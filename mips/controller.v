@@ -109,6 +109,7 @@ module controller(
 	 output RI,
 	 output Care,
 	 output eret,
+	 output eretpassed,
 	 output We,
 	 output BDSel,
 	 output [1:0] CalType,
@@ -288,6 +289,8 @@ module controller(
 	 
 	 
 	 assign We = mtc0;
+	 
+	 assign eretpassed = eret;
 	 //Tuse
 	 assign Tuse_rs = {sll|srl|sra|mfhi|mflo|lui|jal|j|mfc0|mtc0|eret,
 							R_ALU|mfhi|mflo|mthi|mtlo|mult|multu|div|divu|I|lw|lh|lhu|lb|lbu|sw|sh|sb|jal|j|mfc0|mtc0|eret};

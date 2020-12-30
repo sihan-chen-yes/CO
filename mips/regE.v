@@ -23,6 +23,7 @@ module regE(
     input reset,
     input E_clr,
 	 input RI,
+	 input eret,
 	 input IntReq,
     input [31:0] instr_D,
     input [31:0] PC_D,
@@ -44,7 +45,7 @@ module regE(
 	 output reg BD_E
     );
 	 always@(posedge clk)begin
-		if(reset|E_clr|IntReq)begin
+		if(reset|E_clr|IntReq|eret)begin
 			RD1_E <= 32'h00000000;
 			RD2_E <= 32'h00000000;
 			imm32_E <= 32'h00000000;

@@ -23,6 +23,7 @@ module PC(
     input reset,
 	 input PC_en,
     input [31:0] NPC,
+	 input eret,
     output reg [31:0] PC
     );
 	initial begin
@@ -32,7 +33,7 @@ module PC(
 	always@(posedge clk) begin
 		if(reset)
 			PC <= 32'h00003000;
-		else if(PC_en) begin
+		else if(PC_en|eret) begin
 			PC <= NPC;
 		end
 	end
