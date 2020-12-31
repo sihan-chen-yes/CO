@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/roife/Documents/ISE/p7/mips.xst" -ofn "C:/Users/roife/Documents/ISE/p7/mips.syr" 

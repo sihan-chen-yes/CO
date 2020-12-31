@@ -1,0 +1,78 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/86181/Desktop/P7/mips/mips_tb_isim_beh.exe" -prj "C:/Users/86181/Desktop/P7/mips/mips_tb_beh.prj" "work.mips_tb" "work.glbl" 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/PC.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/NPC.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/MDU.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/IM.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/GRF.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/EXT.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/DM.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/DA.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/CP0.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/CMP.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/ALU.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/stageW.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/stageM.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/stageF.v" into library work
+WARNING:HDLCompiler:35 - "C:/Users/86181/Desktop/P7/mips/stageF.v" Line 45: <nextPC> is already implicitly declared earlier.
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/stageE.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/stageD.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/regW.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/regM.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/regE.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/regD.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/controller.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/ATcontroller.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/Timer.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/CPU.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/Bridge.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/mips.v" into library work
+Analyzing Verilog file "C:/Users/86181/Desktop/P7/mips/mips_tb.v" into library work
+Analyzing Verilog file "D:/school/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/86181/Desktop/P7/mips/CPU.v" Line 67: Port IntReq is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/86181/Desktop/P7/mips/CPU.v" Line 109: Port RFWr is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/86181/Desktop/P7/mips/CPU.v" Line 198: Port Equ is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/86181/Desktop/P7/mips/CPU.v" Line 271: Port Equ is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/86181/Desktop/P7/mips/CPU.v" Line 286: Port EPC is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/86181/Desktop/P7/mips/CPU.v" Line 342: Port Equ is not connected to this instance
+Completed static elaboration
+Fuse Memory Usage: 161732 KB
+Fuse CPU Usage: 202 ms
+Compiling module ATcontroller
+Compiling module PC
+Compiling module IM
+Compiling module stageF
+Compiling module regD
+Compiling module controller
+Compiling module GRF
+Compiling module EXT
+Compiling module CMP
+Compiling module NPC
+Compiling module stageD
+Compiling module regE
+Compiling module ALU
+Compiling module MDU
+Compiling module stageE
+Compiling module regM
+Compiling module DA
+Compiling module DM
+Compiling module CP0
+Compiling module stageM
+Compiling module regW
+Compiling module stageW
+Compiling module CPU
+Compiling module Bridge
+Compiling module Timer
+Compiling module mips
+Compiling module mips_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 28 Verilog Units
+Built simulation executable C:/Users/86181/Desktop/P7/mips/mips_tb_isim_beh.exe
+Fuse Memory Usage: 173784 KB
+Fuse CPU Usage: 405 ms

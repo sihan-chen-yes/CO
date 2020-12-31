@@ -1,0 +1,182 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips"
+Output Format                      : NGC
+Target Device                      : xa3s50-4-vqg100
+
+---- Source Options
+Top Module Name                    : mips
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "_DASM.v" in library work
+Compiling verilog file "_CU.v" in library work
+Compiling verilog include file "const.v"
+Module <_DASM> compiled
+Compiling verilog file "_SU.v" in library work
+Compiling verilog include file "const.v"
+Module <_CU> compiled
+Compiling verilog file "_CP0.v" in library work
+Module <_SU> compiled
+Compiling verilog file "W_REG.v" in library work
+Compiling verilog include file "const.v"
+Module <CP0> compiled
+Compiling verilog file "M_REG.v" in library work
+Compiling verilog include file "const.v"
+Module <W_REG> compiled
+Compiling verilog file "M_DM.v" in library work
+Compiling verilog include file "const.v"
+Module <M_REG> compiled
+Compiling verilog file "F_IFU.v" in library work
+Compiling verilog include file "const.v"
+Module <M_DM> compiled
+Compiling verilog file "E_REG.v" in library work
+Compiling verilog include file "const.v"
+Module <F_IFU> compiled
+Compiling verilog file "E_HILO.v" in library work
+Compiling verilog include file "const.v"
+Module <E_REG> compiled
+Compiling verilog file "E_ALU.v" in library work
+Compiling verilog include file "const.v"
+Module <E_HILO> compiled
+Compiling verilog file "D_REG.v" in library work
+Compiling verilog include file "const.v"
+Module <E_ALU> compiled
+Compiling verilog file "D_NPC.v" in library work
+Compiling verilog include file "const.v"
+Module <D_REG> compiled
+Compiling verilog file "D_GRF.v" in library work
+Compiling verilog include file "const.v"
+Module <D_NPC> compiled
+Compiling verilog file "D_EXT.v" in library work
+Compiling verilog include file "const.v"
+Module <D_GRF> compiled
+Compiling verilog file "D_CMP.v" in library work
+Compiling verilog include file "const.v"
+Module <D_EXT> compiled
+Compiling verilog file "timer.v" in library work
+Module <D_CMP> compiled
+Compiling verilog file "cpu.v" in library work
+Compiling verilog include file "const.v"
+Module <TC> compiled
+ERROR:HDLCompilers:28 - "cpu.v" line 37 'E_EXTout' has not been declared
+ERROR:HDLCompilers:28 - "cpu.v" line 38 'E_pc' has not been declared
+ERROR:HDLCompilers:28 - "cpu.v" line 41 'M_ALUout' has not been declared
+ERROR:HDLCompilers:28 - "cpu.v" line 42 'M_HILOout' has not been declared
+ERROR:HDLCompilers:28 - "cpu.v" line 43 'M_EXTout' has not been declared
+ERROR:HDLCompilers:28 - "cpu.v" line 45 'M_pc' has not been declared
+ERROR:HDLCompilers:28 - "cpu.v" line 48 'W_ALUout' has not been declared
+ERROR:HDLCompilers:28 - "cpu.v" line 49 'W_HILOout' has not been declared
+ERROR:HDLCompilers:28 - "cpu.v" line 50 'W_EXTout' has not been declared
+ERROR:HDLCompilers:28 - "cpu.v" line 51 'W_DMout' has not been declared
+ERROR:HDLCompilers:28 - "cpu.v" line 52 'W_pc' has not been declared
+ERROR:HDLCompilers:28 - "cpu.v" line 53 'W_CP0out' has not been declared
+ERROR:HDLCompilers:28 - "cpu.v" line 78 'D_Br' has not been declared
+Compiling verilog file "mips.v" in library work
+Module <CPU> compiled
+ERROR:HDLCompilers:27 - "mips.v" line 42 Illegal redeclaration of 'HWInt'
+Module <mips> compiled
+Analysis of file <"mips.prj"> failed.
+--> 
+
+Total memory usage is 4506208 kilobytes
+
+Number of errors   :   14 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,63 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe --nodebug --prj mips.prj -o mips.exe mips_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\const.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\cpu.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\D_CMP.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\D_EXT.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\D_GRF.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\D_NPC.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\D_REG.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\E_ALU.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\E_HILO.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\E_REG.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\F_IFU.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\mips.v" into library work
+WARNING:HDLCompiler:35 - "C:\Users\roife\Documents\ISE\p7\mips.v" Line 42: <HWInt> is already implicitly declared earlier.
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\mips_tb.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\M_DM.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\M_REG.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\tb.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\timer.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\W_REG.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\_CP0.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\_CU.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\_DASM.v" into library work
+Analyzing Verilog file "C:\Users\roife\Documents\ISE\p7\_SU.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:\Users\roife\Documents\ISE\p7\cpu.v" Line 125: Port rd_addr is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\roife\Documents\ISE\p7\cpu.v" Line 226: Port rd_addr is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\roife\Documents\ISE\p7\cpu.v" Line 323: Port rs_addr is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\roife\Documents\ISE\p7\cpu.v" Line 412: Port rs_addr is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\roife\Documents\ISE\p7\_SU.v" Line 16: Port rd_addr is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\roife\Documents\ISE\p7\_SU.v" Line 47: Port rs_addr is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\roife\Documents\ISE\p7\_SU.v" Line 68: Port rs_addr is not connected to this instance
+Completed static elaboration
+Compiling module _CU
+Compiling module _SU
+Compiling module _DASM
+Compiling module F_IFU
+Compiling module D_REG
+Compiling module D_GRF
+Compiling module D_EXT
+Compiling module D_CMP
+Compiling module D_NPC
+Compiling module E_REG
+Compiling module E_ALU
+Compiling module E_HILO
+Compiling module M_REG
+Compiling module M_DM
+Compiling module CP0
+Compiling module W_REG
+Compiling module CPU
+Compiling module TC
+Compiling module mips
+Compiling module mips_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 20 Verilog Units
+Built simulation executable mips.exe
+Fuse Memory Usage: 57616 KB
+Fuse CPU Usage: 1092 ms

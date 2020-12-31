@@ -1,0 +1,75 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/CO/mips/tb_isim_beh.exe" -prj "D:/CO/mips/tb_beh.prj" "work.tb" "work.glbl" 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/CO/mips/PC.v" into library work
+Analyzing Verilog file "D:/CO/mips/NPC.v" into library work
+Analyzing Verilog file "D:/CO/mips/MDU.v" into library work
+Analyzing Verilog file "D:/CO/mips/IM.v" into library work
+Analyzing Verilog file "D:/CO/mips/GRF.v" into library work
+Analyzing Verilog file "D:/CO/mips/EXT.v" into library work
+Analyzing Verilog file "D:/CO/mips/DM.v" into library work
+Analyzing Verilog file "D:/CO/mips/DA.v" into library work
+Analyzing Verilog file "D:/CO/mips/CP0.v" into library work
+Analyzing Verilog file "D:/CO/mips/CMP.v" into library work
+Analyzing Verilog file "D:/CO/mips/ALU.v" into library work
+Analyzing Verilog file "D:/CO/mips/stageW.v" into library work
+Analyzing Verilog file "D:/CO/mips/stageM.v" into library work
+Analyzing Verilog file "D:/CO/mips/stageF.v" into library work
+Analyzing Verilog file "D:/CO/mips/stageE.v" into library work
+Analyzing Verilog file "D:/CO/mips/stageD.v" into library work
+Analyzing Verilog file "D:/CO/mips/regW.v" into library work
+Analyzing Verilog file "D:/CO/mips/regM.v" into library work
+Analyzing Verilog file "D:/CO/mips/regE.v" into library work
+Analyzing Verilog file "D:/CO/mips/regD.v" into library work
+Analyzing Verilog file "D:/CO/mips/controller.v" into library work
+Analyzing Verilog file "D:/CO/mips/ATcontroller.v" into library work
+Analyzing Verilog file "D:/CO/mips/Timer.v" into library work
+Analyzing Verilog file "D:/CO/mips/CPU.v" into library work
+Analyzing Verilog file "D:/CO/mips/Bridge.v" into library work
+Analyzing Verilog file "D:/CO/mips/mips.v" into library work
+Analyzing Verilog file "D:/CO/mips/tb.v" into library work
+Analyzing Verilog file "D:/school/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/CO/mips/CPU.v" Line 113: Port RFWr is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/CO/mips/CPU.v" Line 205: Port Equ is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/CO/mips/CPU.v" Line 280: Port Equ is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/CO/mips/CPU.v" Line 358: Port Equ is not connected to this instance
+Completed static elaboration
+Fuse Memory Usage: 161732 KB
+Fuse CPU Usage: 233 ms
+Compiling module ATcontroller
+Compiling module PC
+Compiling module IM
+Compiling module stageF
+Compiling module regD
+Compiling module controller
+Compiling module GRF
+Compiling module EXT
+Compiling module CMP
+Compiling module NPC
+Compiling module stageD
+Compiling module regE
+Compiling module ALU
+Compiling module MDU
+Compiling module stageE
+Compiling module regM
+Compiling module DA
+Compiling module DM
+Compiling module CP0
+Compiling module stageM
+Compiling module regW
+Compiling module stageW
+Compiling module CPU
+Compiling module Bridge
+Compiling module Timer
+Compiling module mips
+Compiling module tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 28 Verilog Units
+Built simulation executable D:/CO/mips/tb_isim_beh.exe
+Fuse Memory Usage: 172632 KB
+Fuse CPU Usage: 468 ms

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/86181/Desktop/P7/mips/stageF.v" Line 45: &lt;<arg fmt="%s" index="1">nextPC</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/86181/Desktop/P7/mips/CPU.v" Line 67: Port <arg fmt="%s" index="1">IntReq</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/86181/Desktop/P7/mips/CPU.v" Line 109: Port <arg fmt="%s" index="1">RFWr</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/86181/Desktop/P7/mips/CPU.v" Line 198: Port <arg fmt="%s" index="1">Equ</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/86181/Desktop/P7/mips/CPU.v" Line 271: Port <arg fmt="%s" index="1">Equ</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/86181/Desktop/P7/mips/CPU.v" Line 286: Port <arg fmt="%s" index="1">EPC</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/86181/Desktop/P7/mips/CPU.v" Line 342: Port <arg fmt="%s" index="1">Equ</arg> is not connected to this instance
+</msg>
+
+</messages>
+

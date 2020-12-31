@@ -1,0 +1,67 @@
+Running: D:\school\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe --nodebug --prj mips.prj -o mips.exe mips_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\ALU.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\ATcontroller.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\Bridge.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\CMP.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\controller.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\CP0.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\CPU.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\DA.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\DM.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\EXT.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\GRF.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\IM.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\MDU.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\mips.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\mips_tb.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\NPC.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\PC.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\regD.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\regE.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\regM.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\regW.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\stageD.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\stageE.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\stageF.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\stageM.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\stageW.v" into library work
+Analyzing Verilog file "C:\Users\86181\Desktop\P7test\cpp\Timer.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module ATcontroller
+Compiling module PC
+Compiling module IM
+Compiling module stageF
+Compiling module regD
+Compiling module controller
+Compiling module GRF
+Compiling module EXT
+Compiling module CMP
+Compiling module NPC
+Compiling module stageD
+Compiling module regE
+Compiling module ALU
+Compiling module MDU
+Compiling module stageE
+Compiling module regM
+Compiling module DA
+Compiling module DM
+Compiling module CP0
+Compiling module stageM
+Compiling module regW
+Compiling module stageW
+Compiling module CPU
+Compiling module Bridge
+Compiling module Timer
+Compiling module mips
+Compiling module mips_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 27 Verilog Units
+Built simulation executable mips.exe
+Fuse Memory Usage: 32844 KB
+Fuse CPU Usage: 718 ms
